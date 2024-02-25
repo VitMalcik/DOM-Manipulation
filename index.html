@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/domManipulation_favicon.png" />
+
+    <title>DOM Manipulation</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-placeholder hidden"></div>
+      <header class="header">
+        <nav class="nav">
+          <div class="nav-container">
+            <h1>DOM <span>Manipulation</span></h1>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="manipulations-container">
+          <section class="box modal-window">
+            <h1>Modal window</h1>
+            <p>Close window with ESC, &times or click outside the window</p>
+            <div class="modal-btns-container">
+              <button class="show-modal">Display</button>
+              <button class="show-modal">Display</button>
+              <button class="show-modal">Display</button>
+            </div>
+            <div class="modal hidden">
+              <img src="images/nicolasCage.jpg" alt="image" />
+              <button class="close-modal">&times;</button>
+              <p>
+                Oh boy! <br />
+                Look, Nicolas Cage!
+              </p>
+            </div>
+          </section>
+
+          <section class="box tabbed-window-container">
+            <h1>Tabbed window</h1>
+            <div class="tabbed-window-btns">
+              <button class="btn-tab btn-tab-1 btn-tab-active" data-tab="1">
+                Window 01
+              </button>
+              <button class="btn-tab btn-tab-2" data-tab="2">Window 02</button>
+              <button class="btn-tab btn-tab-3" data-tab="3">Window 03</button>
+            </div>
+
+            <div class="tabbed-window tabbed-window-1 tabbed-window-active">
+              <div class="window-img window-img-1">
+                <img
+                  src="images/paula-borowska-7r-z1UmWFAU-unsplash.jpg"
+                  alt="" />
+              </div>
+              <div class="window-text">
+                <h2 class="window-header">Tab 01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae commodi quibusdam quod quaerat ipsa quis mollitia
+                  recusandae similique ipsam officiis.
+                </p>
+              </div>
+            </div>
+            <div class="tabbed-window tabbed-window-2">
+              <div class="window-img window-img-2">
+                <img
+                  src="images/bogdan-cadar-jO2ivkZSfL8-unsplash.jpg"
+                  alt="" />
+              </div>
+              <div class="window-text">
+                <h2 class="window-header">Tab 02</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                  praesentium nobis quibusdam facere adipisci in.
+                </p>
+              </div>
+            </div>
+            <div class="tabbed-window tabbed-window-3">
+              <div class="window-img window-img-3">
+                <img
+                  src="images/famara-marmiesse-Gbgid8-6WEQ-unsplash.jpg"
+                  alt="" />
+              </div>
+              <div class="window-text">
+                <h2 class="window-header">Tab 03</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae et sint dolore quod quis nam consequatur porro ipsa
+                  veniam sit quibusdam labore temporibus ut esse quaerat placeat
+                  aliquid est animi, minus tempora ducimus magni sapiente?
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="box slider-container">
+            <h2>Slider</h2>
+            <div class="slider-content">
+              <img
+                class="slide slide-1"
+                src="images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg"
+                alt="" />
+            </div>
+            <div class="slider-content">
+              <img
+                class="slide slide-2"
+                src="images/bravingbird-sB0TYBniv84-unsplash.jpg"
+                alt="" />
+            </div>
+            <div class="slider-content">
+              <img
+                class="slide slide-3"
+                src="images/samuel-ferrara-1527pjeb6jg-unsplash.jpg"
+                alt="" />
+            </div>
+            <button class="btn-prev-img">&#10094;</button>
+            <button class="btn-next-img">&#10095;</button>
+          </section>
+
+          <section class="box reveal-on-scroll">
+            <h2>Scroll reveal effect</h2>
+            <div class="reveal-content reveal-01">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+                amet, eaque inventore dolor a rerum, tempora tenetur cupiditate
+                corrupti ullam sunt voluptates ipsa harum voluptas excepturi
+                possimus ratione consequuntur fugit quia praesentium. Nesciunt,
+                commodi facere quasi dolor blanditiis provident, unde minus ut
+                cupiditate quibusdam harum consequuntur? Dignissimos perferendis
+                expedita deserunt.m!
+              </p>
+            </div>
+            <div class="reveal-content reveal-02">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate illo fuga sim sala bim!
+              </p>
+            </div>
+            <div class="reveal-content reveal-03">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                perferendis culpa, molestiae pariatur laudantium eos blanditiis
+                doloribus iste amet quibusdam sed minima quasi, consectetur
+                quisquam totam sint. Est, veniam reprehenderit fugit illum
+                dignissimos enim, sed qui omnis animi distinctio id!
+              </p>
+            </div>
+          </section>
+
+          <section class="box lazy-load-container">
+            <div class="lazy-load-header">
+              <h2>Lazy loading images</h2>
+            </div>
+            <div class="lazy-load-content-container">
+              <img
+                class="lazy-load-img lazy-img-blur"
+                src="images/bogdan-cadar-jO2ivkZSfL8-unsplash-tiny.jpg"
+                data-src="images/bogdan-cadar-jO2ivkZSfL8-unsplash.jpg"
+                alt="image" />
+              <div class="lazy-load-text">
+                <p>Lazy load 01</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dignissimos laboriosam beatae atque. Ex obcaecati reiciendis,
+                  labore sapiente facilis similique omnis optio, aperiam tempora
+                  itaque dolore laborum illum deleniti nesciunt officiis neque
+                  quia necessitatibus. Velit, perferendis!
+                </p>
+              </div>
+            </div>
+            <div class="lazy-load-content-container">
+              <img
+                class="lazy-load-img lazy-img-blur"
+                src="images/famara-marmiesse-Gbgid8-6WEQ-unsplash-tiny.jpg"
+                data-src="images/famara-marmiesse-Gbgid8-6WEQ-unsplash.jpg"
+                alt="image" />
+              <div class="lazy-load-text">
+                <p>Lazy load 02</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                  repellendus dolorem quo vel voluptas, blanditiis neque
+                  necessitatibus sit optio officiis cumque modi ut fuga quam!
+                </p>
+              </div>
+            </div>
+            <div class="lazy-load-content-container">
+              <img
+                class="lazy-load-img lazy-img-blur"
+                src="images/paula-borowska-7r-z1UmWFAU-unsplash-tiny.jpg"
+                data-src="images/paula-borowska-7r-z1UmWFAU-unsplash.jpg"
+                alt="image" />
+              <div class="lazy-load-text">
+                <p>Lazy load 02</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore ea sequi consectetur expedita accusantium, animi
+                  quibusdam magni reiciendis dignissimos id. Modi fugit quos
+                  excepturi quia doloribus voluptates similique molestias quis
+                  et. Quibusdam sint quas sit pariatur alias minus. Blanditiis,
+                  illo.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <div class="smooth-scroll-container">
+            <button class="btn-smooth-scroll btn-smooth-scroll-hidden">
+              &#8593; Scroll to top
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>Created by Vit Malcik 2024</footer>
+  </body>
+</html>

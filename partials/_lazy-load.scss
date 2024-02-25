@@ -1,0 +1,25 @@
+@import "./colors";
+
+.lazy-load-header {
+  margin: 20px;
+  text-align: center;
+}
+
+.lazy-load-content-container {
+  margin: 36px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.lazy-load-img {
+  width: 250px;
+  transition: 0.8s;
+}
+
+.lazy-img-blur {
+  filter: blur(15px);
+}
+
+.lazy-load-text p {
+  margin-bottom: 10px;
+}

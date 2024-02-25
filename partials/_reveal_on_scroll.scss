@@ -1,0 +1,16 @@
+@import "./colors";
+
+.reveal-content {
+  margin: 15px 25px 90px 25px;
+
+  transition: 1.2s;
+}
+
+.reveal-content-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.reveal-on-scroll h2 {
+  text-align: center;
+}

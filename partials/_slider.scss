@@ -1,0 +1,45 @@
+// SLIDER
+@import "./mixins";
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  height: 570px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  padding-bottom: 20px;
+  h2 {
+    position: relative;
+    top: -220px;
+  }
+}
+
+.slider-content {
+  transform: translateY(30px);
+  height: 400px;
+  max-width: 850px;
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  transition: 0.6s ease-in-out;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.btn-prev-img {
+  left: 6%;
+  @include mx-slider-button;
+}
+.btn-next-img {
+  right: 6%;
+  @include mx-slider-button;
+}

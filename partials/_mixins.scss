@@ -1,0 +1,11 @@
+@mixin mx-slider-button {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 1px 12px 4px 11px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #6a879c;
+  background-color: #e7f8ff;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
